@@ -1,0 +1,27 @@
+
+h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:#7a6d6d;
+}
+
+/* ocultar los ratios y girarlos */
+.rating input { 
+     float: right;  
+     opacity: 0; 
+     position: absolute;
+}
+
+/* poner color por default de las estrellas y girarlas */
+.rating label {
+      float:right;
+      color: #bbb;
+  }
+
+  /* crear el sibling para el coloreado progresivo */
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover {
+      color: #961636;
+      cursor: pointer;
+  }
+  
